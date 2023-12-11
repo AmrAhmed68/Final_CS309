@@ -72,6 +72,7 @@ const SignUP = () => {
       setAge("");
       setCountry("");
       alert('SignUp successful!');
+      localStorage.setItem('userData', JSON.stringify([Username,Email,PhoneNumber,age,country]));
       navigate('/Login');
 
     } catch (error) {
